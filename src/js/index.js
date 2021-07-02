@@ -69,19 +69,19 @@ elements.BudgetContainer.addEventListener('click', (e) => {
   }
 })
 
-// elements.inputButton.addEventListener('click', e => {
-//   e.preventDefault()
-//   const inputs = getInputs()
+elements.inputButton.addEventListener('click', (e) => {
+  e.preventDefault()
+  const inputs = getInputs()
 
-//   if (inputs) {
-//     // add data to it
-//     budget.addBudget(inputs)
-//     console.log(budget.getBudgets())
-//     clearInput()
-//     renderBudget(inputs, inputs.type)
-//   } else {
-//     alert('please enter valid data')
-//   }
-// })
+  if (inputs) {
+    // add data to it
+    budget.addBudget(inputs)
+    console.log(budget.getBudgets())
+    clearInput()
+    renderBudget(inputs, inputs.type)
+  } else {
+    alert('please enter valid data')
+  }
+})
 init()
 elements.inputType.addEventListener('change', changedType)
